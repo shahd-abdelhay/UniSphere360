@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>UniSphere 360+ | AI-Powered University Ecosystem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="logo">U<span>+</span></div><div><b>UniSphere</b><small>360+ • Intelligent University</small></div></div>
+  <label>PRESENTATION</label>
+  <nav>
+    <button class="nav active" data-page="home">01&nbsp; Overview</button>
+    <button class="nav" data-page="vision">02&nbsp; Vision & Problem</button>
+    <button class="nav" data-page="ecosystem">03&nbsp; Ecosystem</button>
+    <button class="nav" data-page="ai">04&nbsp; AI Core</button>
+    <button class="nav" data-page="architecture">05&nbsp; Architecture</button>
+    <button class="nav" data-page="demo">06&nbsp; Live UI Demo</button>
+    <button class="nav" data-page="flows">07&nbsp; AI Workflows</button>
+    <button class="nav" data-page="security">08&nbsp; Security</button>
+    <button class="nav" data-page="roadmap">09&nbsp; Roadmap</button>
+    <button class="nav" data-page="final">10&nbsp; Final Pitch</button>
+  </nav>
+  <div class="side-bottom"><div class="status">● Prototype Mode</div><button class="present" id="presentBtn">▶ Presentation Mode</button></div>
+</aside>
+
+<main>
+<header><span>UNISPHERE 360+ / <b id="crumb">Overview</b></span><div><button class="icon" id="themeBtn">☼</button><button class="outline" onclick="show('demo')">Start Demo →</button></div></header>
+
+<section id="home" class="page active">
+<div class="hero">
+ <div>
+  <div class="eyebrow">● AI-POWERED UNIVERSITY ECOSYSTEM</div>
+  <h1>One University.<br><em>One Intelligent</em><br>Ecosystem.</h1>
+  <p>UniSphere 360+ transforms the traditional university portal into a personalized AI ecosystem connecting students, instructors, HR, staff and university administration.</p>
+  <div class="actions"><button class="primary" onclick="show('demo')">Explore the UI Demo →</button><button class="outline" onclick="show('architecture')">View Architecture</button></div>
+  <div class="proof"><div><b>4+</b><small>Smart Portals</small></div><div><b>6</b><small>AI Engines</small></div><div><b>1</b><small>Unified Ecosystem</small></div></div>
+ </div>
+ <div class="hero-visual"><div class="orb"></div><div class="core"><div class="logo">U+</div><b>UniSphere AI Core</b><small>Understanding • Predicting • Recommending</small></div>
+ <div class="node n1"><b>STUDENT</b><small>Personalized LMS</small></div><div class="node n2"><b>FACULTY</b><small>AI Teaching Studio</small></div><div class="node n3"><b>HR / STAFF</b><small>Smart HR Portal</small></div><div class="node n4"><b>ADMIN</b><small>Command Center</small></div></div>
+</div>
+<div class="section-title"><label>THE CONCEPT</label><h2>From fragmented systems to one intelligent university.</h2></div>
+<div class="cards four"><article><strong>◎</strong><h3>Personalized</h3><p>Every student gets an AI profile, learning path and recommendations based on academic data.</p></article><article><strong>✦</strong><h3>Generative</h3><p>AI creates summaries, questions, flashcards, practice exams and explanations for every course.</p></article><article><strong>◈</strong><h3>Predictive</h3><p>GPA, expected-grade and academic-risk signals are generated from real student history.</p></article><article><strong>↗</strong><h3>Connected</h3><p>Student, faculty, HR and administration share one governed identity and data layer.</p></article></div>
+</section>
+
+<section id="vision" class="page">
+<div class="title"><label>02 / VISION & PROBLEM</label><h2>Why UniSphere 360+?</h2><p>The challenge is not a lack of university systems. It is that they rarely understand the person using them.</p></div>
+<div class="compare"><article><small class="red">TODAY</small><h3>Disconnected Experience</h3><ul><li>× LMS, registration, grades and HR tools are separated.</li><li>× Students receive mostly the same learning experience.</li><li>× Course content is stored, but not intelligently understood.</li><li>× Academic risk can be discovered late.</li><li>× Faculty spend time on repetitive content creation.</li></ul></article><div class="big-arrow">→</div><article class="solution"><small class="green">WITH UNISPHERE</small><h3>Adaptive Digital University</h3><ul><li>✓ One identity, connected services and profile.</li><li>✓ Personalized LMS for every student.</li><li>✓ Course-aware AI grounded in approved content.</li><li>✓ Predictive academic intelligence with explainable signals.</li><li>✓ AI copilots for teaching, HR and administration.</li></ul></article></div>
+<div class="quote">“ <div><b>A university that doesn't just store data — it understands it.</b><p>UniSphere turns university data into contextual assistance while keeping authorized humans in control.</p></div></div>
+</section>
+
+<section id="ecosystem" class="page">
+<div class="title"><label>03 / ECOSYSTEM</label><h2>Four experiences. One intelligence layer.</h2><p>Each role gets a purpose-built workspace while sharing the same governed platform.</p></div>
+<div class="role-grid">
+<article class="role student" onclick="role('student')"><small>01 / STUDENT</small><strong>◉</strong><h3>Personalized Student LMS</h3><p>Courses, AI tutor, recommendations, predictions, registration, skills and graduation planning.</p><div><i>AI Tutor</i><i>Recommendations</i><i>GPA</i></div><button>Explore UI →</button></article>
+<article class="role faculty" onclick="role('faculty')"><small>02 / FACULTY</small><strong>◇</strong><h3>AI Teaching Studio</h3><p>Course intelligence, question generation, assessment support and student analytics.</p><div><i>AI Exams</i><i>Analytics</i><i>Content</i></div><button>Explore UI →</button></article>
+<article class="role hr" onclick="role('hr')"><small>03 / HR & STAFF</small><strong>◌</strong><h3>Smart HR Portal</h3><p>Employee profiles, attendance, leave, documents, requests, training and HR policy AI.</p><div><i>Attendance</i><i>Leave</i><i>AI HR</i></div><button>Explore UI →</button></article>
+<article class="role admin" onclick="role('admin')"><small>04 / ADMIN</small><strong>▣</strong><h3>University Command Center</h3><p>University-wide analytics, academic intelligence, HR insights and governance.</p><div><i>KPIs</i><i>Insights</i><i>Governance</i></div><button>Explore UI →</button></article>
+</div>
+<div class="flowbar">IDENTITY <b>→</b> DATA <b>→</b> AI CORE <b>→</b> PERSONALIZED ACTIONS <b>→</b> HUMAN DECISION</div>
+</section>
+
+<section id="ai" class="page">
+<div class="title"><label>04 / AI CORE</label><h2>The intelligence layer behind every experience.</h2><p>AI is not one chatbot. UniSphere combines retrieval, recommendation, prediction, generation, vision and voice.</p></div>
+<div class="cards three">
+<article><em>01</em><h3>RAG Intelligence</h3><p>Answers grounded in university regulations, course materials, HR policies and approved documents.</p><code>Embeddings • Vector DB • Retrieval • LLM</code></article>
+<article><em>02</em><h3>Recommendation Engine</h3><p>Personalized courses, resources, revision topics, study plans and career pathways.</p><code>Content-Based • Collaborative • Hybrid</code></article>
+<article><em>03</em><h3>Prediction Engine</h3><p>Academic indicators such as GPA, expected grade and early-warning signals.</p><code>ML • XGBoost / sklearn • Explainability</code></article>
+<article><em>04</em><h3>Generative Course AI</h3><p>Creates summaries, MCQs, true/false, flashcards and practice exams.</p><code>LLM • Prompting • RAG • Rubrics</code></article>
+<article><em>05</em><h3>Vision AI</h3><p>Students can photograph questions, equations, slides or diagrams for contextual assistance.</p><code>OCR • Vision Models • OpenCV</code></article>
+<article><em>06</em><h3>Voice AI</h3><p>Natural voice conversations using speech recognition and text-to-speech in Arabic and English.</p><code>STT • LLM • TTS</code></article>
+</div>
+<div class="pipeline">UNIVERSITY DATA <b>→</b> CONTEXT <b>→</b> <strong>AI CORE</strong> <b>→</b> RECOMMEND / PREDICT / GENERATE <b>→</b> HUMAN ACTION</div>
+</section>
+
+<section id="architecture" class="page">
+<div class="title"><label>05 / ARCHITECTURE</label><h2>Production-minded technical architecture.</h2><p>Spring Boot owns business workflows while dedicated AI services handle intelligent workloads.</p></div>
+<div class="architecture">
+<div><b>EXPERIENCE LAYER</b><span>Student Web / Mobile</span><span>Faculty Portal</span><span>HR Portal</span><span>Admin Command Center</span></div>
+<i>↓</i><div><b>APPLICATION LAYER</b><span>API Gateway / BFF</span><span>Auth & RBAC</span><span>Notifications</span><span>Workflow</span><span>Audit</span></div>
+<i>↓</i><div><b>DOMAIN SERVICES — JAVA / SPRING BOOT</b><span>Academic</span><span>LMS</span><span>Registration</span><span>Grades</span><span>HR</span><span>Career</span><span>Graduation</span></div>
+<i>↓</i><div class="ai-layer"><b>AI SERVICES — PYTHON / FASTAPI</b><span>RAG</span><span>Recommendation</span><span>Prediction</span><span>Generative AI</span><span>Vision</span><span>Voice</span></div>
+<i>↓</i><div><b>DATA & INFRASTRUCTURE</b><span>SQL Server / PostgreSQL</span><span>Redis</span><span>Vector DB</span><span>Object Storage</span><span>Event Bus</span><span>Observability</span></div>
+</div>
+<div class="stack"><b>SUGGESTED STACK</b><span>Java 17</span><span>Spring Boot</span><span>Python</span><span>FastAPI</span><span>React / Next.js</span><span>SQL Server</span><span>Docker</span><span>GitHub Actions</span></div>
+</section>
+
+<section id="demo" class="page">
+<div class="title"><label>06 / LIVE UI DEMO</label><h2>The complete product experience.</h2><p>Switch roles to simulate the main dashboards and product flows.</p></div>
+<div class="tabs"><button class="active" data-role="student">🎓 Student</button><button data-role="faculty">◈ Faculty</button><button data-role="hr">◌ HR / Staff</button><button data-role="admin">▣ Admin</button></div>
+
+<div id="studentDemo" class="dashboard active">
+<aside class="dash-side"><div class="dash-logo">U+</div><small>STUDENT LMS</small><button>⌂ Dashboard</button><button>▤ My Courses</button><button>✦ AI Tutor</button><button>◎ Recommendations</button><button>◈ Analytics</button><button>◌ Career</button><button>▣ Graduation</button><div class="user">SM<br><small>Shahd M.</small></div></aside>
+<div class="dash-main"><div class="dash-head"><div><small>MONDAY, SEPTEMBER 28</small><h3>Good morning, Shahd 👋</h3></div><b class="avatar">SM</b></div>
+<div class="ai-banner"><strong>✦</strong><div><b>Your AI Learning Brief</b><small>You have 2 priority topics. Backpropagation is currently your weakest ML topic.</small></div><button onclick="toast('AI brief opened')">Open Brief →</button></div>
+<div class="kpis"><div><small>CURRENT GPA</small><b>3.42</b><span>Predicted 3.55</span></div><div><small>ACADEMIC HEALTH</small><b class="green">82%</b><div class="bar"><i style="width:82%"></i></div><span>Stable • 2 areas need attention</span></div><div><small>CONTINUE LEARNING</small><b>Machine Learning</b><span>Lecture 06 • Optimization</span><button onclick="toast('Opening course LMS')">Continue →</button></div></div>
+<div class="two">
+<div class="panel"><h4>AI Recommendations <button onclick="toast('Recommendations refreshed')">↻ Refresh</button></h4><div class="rec"><b>01</b><span>Review Backpropagation<small>Based on quiz performance • 18 min</small></span><em>82%</em></div><div class="rec"><b>02</b><span>Practice CNN Questions<small>Matches your Computer Vision goal</small></span><em>91%</em></div><div class="rec"><b>03</b><span>Watch Lecture Summary<small>Recommended before your quiz</small></span><em>88%</em></div></div>
+<div class="panel chat"><h4>✦ AI Course Tutor <span>● LIVE</span></h4><div class="msg bot">Hi Shahd. Ask me about any registered course.</div><div class="msg user">Explain overfitting simply.</div><div class="msg bot">Overfitting means the model memorizes training data too closely and performs poorly on unseen data.</div><div class="chat-input"><input id="chatInput" placeholder="Ask your AI tutor..."><button onclick="sendChat()">➤</button><button onclick="toast('Voice mode activated 🎤')">🎤</button><button onclick="toast('Camera / vision mode activated 📷')">📷</button></div></div></div>
+</div></div>
+
+<div id="facultyDemo" class="dashboard"><div class="wide">
+<div class="dash-head"><div><small>FACULTY WORKSPACE</small><h3>Machine Learning • Course Studio</h3></div><button class="primary small" onclick="toast('AI Course Copilot opened')">✦ AI Course Copilot</button></div>
+<div class="kpis four"><div><small>ENROLLED</small><b>124</b><span>+8 this term</span></div><div><small>AVG SCORE</small><b>78.4%</b><span class="green">+4.2%</span></div><div><small>ATTENDANCE</small><b>91%</b><span>Stable</span></div><div><small>AT-RISK</small><b class="orange">14</b><span>Needs review</span></div></div>
+<div class="two"><div class="panel"><h4>Course Intelligence</h4><div class="topic"><span>Classification</span><div class="bar"><i style="width:87%"></i></div><b>87%</b></div><div class="topic"><span>CNN</span><div class="bar"><i style="width:82%"></i></div><b>82%</b></div><div class="topic"><span>Optimization</span><div class="bar"><i style="width:68%"></i></div><b>68%</b></div><div class="topic"><span>Backpropagation</span><div class="bar"><i style="width:61%"></i></div><b class="orange">61%</b></div><div class="insight"><b>✦ AI Insight</b><p>Backpropagation is the weakest topic across the latest assessments. Consider a targeted revision session.</p></div></div>
+<div class="panel"><h4>AI Assessment Studio</h4><button class="tool" onclick="tool('MCQ')">＋ Generate MCQs <span>20</span></button><button class="tool" onclick="tool('Exam')">＋ Build Practice Exam <span>30 min</span></button><button class="tool" onclick="tool('Summary')">＋ Summarize Lecture <span>AI</span></button><button class="tool" onclick="tool('Flashcards')">＋ Create Flashcards <span>25</span></button></div></div></div></div>
+
+<div id="hrDemo" class="dashboard"><div class="wide">
+<div class="dash-head"><div><small>PEOPLE & HR</small><h3>Staff Operations Center</h3></div><button class="outline" onclick="toast('HR AI Assistant opened')">✦ Ask HR AI</button></div>
+<div class="kpis four"><div><small>EMPLOYEES</small><b>1,284</b><span>9 departments</span></div><div><small>PRESENT TODAY</small><b>94.2%</b><span class="green">+1.8%</span></div><div><small>LEAVE REQUESTS</small><b>18</b><span>6 pending</span></div><div><small>OPEN REQUESTS</small><b>27</b><span>4 urgent</span></div></div>
+<div class="three"><div class="panel center"><h4>Today's Attendance</h4><div class="donut"><b>94.2%</b><small>Present</small></div><span>Present 94.2% • Late 3.1% • Leave 2.7%</span></div><div class="panel"><h4>Pending Requests</h4><div class="request"><b>LR-1024</b><span>Annual Leave • 2 days</span><button onclick="approve(this)">Review</button></div><div class="request"><b>HR-882</b><span>Employment Letter</span><button onclick="approve(this)">Review</button></div><div class="request"><b>TR-419</b><span>Cloud Certification</span><button onclick="approve(this)">Review</button></div></div><div class="panel chat"><h4>✦ HR AI Assistant</h4><div class="msg bot">I answer from approved university HR policies.</div><div class="msg user">What is the annual leave process?</div><div class="msg bot">Submit the request through the HR portal; approval follows the department workflow.</div><div class="chat-input"><input placeholder="Ask HR policy..."><button onclick="toast('HR AI response generated')">➤</button></div></div></div></div></div>
+
+<div id="adminDemo" class="dashboard"><div class="wide">
+<div class="dash-head"><div><small>UNIVERSITY COMMAND CENTER</small><h3>Executive Intelligence Dashboard</h3></div><span class="status">● Data synchronized</span></div>
+<div class="kpis four"><div><small>STUDENTS</small><b>18,642</b><span>+3.8% YoY</span></div><div><small>FACULTY</small><b>1,126</b><span>42 departments</span></div><div><small>AVG GPA</small><b>3.18</b><span>+0.07</span></div><div><small>GRADUATION RATE</small><b>88.6%</b><span class="green">+2.1%</span></div></div>
+<div class="two"><div class="panel"><h4>University Performance • Last 6 months</h4><div class="bars"><i style="height:45%"></i><i style="height:58%"></i><i style="height:51%"></i><i style="height:68%"></i><i style="height:73%"></i><i style="height:82%"></i><i style="height:79%"></i><i style="height:91%"></i></div><div class="months">APR MAY JUN JUL AUG SEP</div></div><div class="panel"><h4>AI Executive Insights</h4><div class="exec"><b>↑ Student success</b><p>Overall academic health improved across three departments.</p></div><div class="exec"><b>⚠ Attention</b><p>Two courses show sustained assessment difficulty trends.</p></div><div class="exec"><b>✦ Opportunity</b><p>AI tutoring adoption increased learning-resource engagement.</p></div></div></div></div></div>
+</section>
+
+<section id="flows" class="page">
+<div class="title"><label>07 / AI WORKFLOWS</label><h2>How intelligence moves through the system.</h2><p>The workflows connect data, AI reasoning and personalized actions.</p></div>
+<div class="flow-tabs"><button class="active" onclick="workflow(0,this)">Personalized Learning</button><button onclick="workflow(1,this)">AI Course Assistant</button><button onclick="workflow(2,this)">Academic Prediction</button><button onclick="workflow(3,this)">Vision + Voice</button></div>
+<div id="workflowBox" class="workflow"></div>
+<div class="note"><b>Example:</b> A student struggles with optimization → the system detects the weak topic → recommends a targeted summary → generates practice questions → tracks improvement → updates the learning profile.</div>
+</section>
+
+<section id="security" class="page">
+<div class="title"><label>08 / SECURITY & GOVERNANCE</label><h2>AI with boundaries, security and human oversight.</h2><p>University platforms handle sensitive academic and employee information, so governance is a first-class architecture concern.</p></div>
+<div class="cards three"><article><em>01</em><h3>Identity & RBAC</h3><p>Separate permissions for students, faculty, HR, managers and administrators.</p><code>JWT • OAuth2 • RBAC</code></article><article><em>02</em><h3>Data Protection</h3><p>Encryption in transit and at rest, controlled access and secure document storage.</p><code>TLS • Encryption • Secrets</code></article><article><em>03</em><h3>AI Grounding</h3><p>Course and policy answers are grounded in approved sources through retrieval.</p><code>RAG • Citations • Guardrails</code></article><article><em>04</em><h3>Auditability</h3><p>Track sensitive actions, approvals, AI interactions and administrative changes.</p><code>Audit Logs • Monitoring</code></article><article><em>05</em><h3>Human-in-the-loop</h3><p>Predictions and generated content assist decisions; authorized humans retain final control.</p><code>Review • Approval • Override</code></article><article><em>06</em><h3>Responsible AI</h3><p>Monitor data quality, model drift, bias risks and confidence before production use.</p><code>Evaluation • Monitoring</code></article></div>
+</section>
+
+<section id="roadmap" class="page">
+<div class="title"><label>09 / ROADMAP</label><h2>From graduation prototype to university platform.</h2><p>Phased implementation keeps the vision ambitious while making the MVP realistic.</p></div>
+<div class="timeline">
+<div><b>01</b><small>FOUNDATION</small><h3>Identity + Academic Core</h3><p>Users, RBAC, students, faculty, courses, enrollments, grades, attendance and registration.</p></div>
+<div class="current"><b>02</b><small>LMS</small><h3>Personalized Learning Experience</h3><p>Student LMS, faculty course studio, content, assignments and assessments.</p></div>
+<div><b>03</b><small>AI</small><h3>RAG + Recommendation + Prediction</h3><p>Course-aware tutor, content generation, recommendations, GPA/grade prediction and early warning.</p></div>
+<div><b>04</b><small>MULTIMODAL</small><h3>Voice + Vision + Career</h3><p>Voice tutor, image-based question understanding, skill passport and career roadmap.</p></div>
+<div><b>05</b><small>INTELLIGENCE</small><h3>HR + Command Center</h3><p>Smart HR, executive analytics, AI insights, governance, monitoring and deployment.</p></div>
+</div>
+</section>
+
+<section id="final" class="page final"><div class="final-inner"><div class="eyebrow">● FINAL CONCEPT</div><h2>Build a university that<br><em>adapts to people.</em></h2><p>UniSphere 360+ connects academic learning, AI assistance, prediction, recommendations, staff operations and executive intelligence in one governed digital ecosystem.</p><div class="principles"><div><b>Understand</b><small>Build a contextual profile</small></div><div><b>Assist</b><small>Give useful AI copilots</small></div><div><b>Predict</b><small>Surface signals early</small></div><div><b>Personalize</b><small>Recommend the next action</small></div></div><button class="primary" onclick="show('demo')">Replay Product Demo →</button></div><footer>UNISPHERE 360+ • AI-POWERED UNIVERSITY ECOSYSTEM</footer></section>
+</main>
+</div>
+
+<div id="toast" class="toast"></div>
+<div id="overlay" class="overlay"><button class="close" onclick="closePresentation()">×</button><div class="slide"><label id="sKicker"></label><h2 id="sTitle"></h2><p id="sText"></p><div class="progress"><i id="sProgress"></i></div><div class="controls"><button onclick="prev()">←</button><span id="sCount"></span><button onclick="next()">→</button></div></div></div>
+<script src="script.js"></script>
+</body></html>
